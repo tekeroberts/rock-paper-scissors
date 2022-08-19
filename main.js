@@ -1,8 +1,6 @@
 const choices = ["rock", "paper", "scissors"];
 let outcome = false;
 let tie = false;
-let playerWins = 0;
-let compWins = 0;
 
 function getComputerChoice() {
   return choices[Math.floor(Math.random() * 3)];
@@ -55,6 +53,8 @@ function playRound() {
 }
 
 function game() {
+  let playerWins = 0;
+  let compWins = 0;
   for (let i = 0; i < 5; i++) {
     console.log("Round: " + (i + 1));
     console.log(playRound());
