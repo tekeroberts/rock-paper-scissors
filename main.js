@@ -1,13 +1,18 @@
 const choices = ["rock", "paper", "scissors"];
 let outcome = false;
 let tie = false;
+let playerWins = 0;
+let compWins = 0;
 
 function getComputerChoice() {
   return choices[Math.floor(Math.random() * 3)];
 }
 
-function playRound() {
-  const pS = getPlayerChoice();
+function playRound(bruh) {
+  tie = false;
+  outcome = false;
+  text.innerHTML = "";
+  const pS = bruh;
   const cS = getComputerChoice();
   console.log("Player chose: " + pS);
   console.log("Computer chose: " + cS);

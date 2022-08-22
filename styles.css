@@ -1,0 +1,60 @@
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+  flex-direction: column;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  gap: 16px;
+  background-color: grey;
+  border-style: solid;
+  padding: 30px;
+  border-radius: 6px;
+  width: 400px;
+  min-height: 400px;
+}
+
+.buttonBox {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 16px;
+}
+
+button {
+  padding: 8px;
+  border-radius: 6px;
+  border-color: lightslategray;
+}
+
+.textBox {
+  display: flex;
+  justify-content: space-evenly;
+  width: 220px;
+  height: 100px;
+  background-color: darkgray;
+  margin: auto;
+  border-radius: 6px;
+  margin-top: 40px;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  width: 200px;
+  text-align: center;
+}
+
+.scoreBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.score {
+  font-size: 18px;
+}
